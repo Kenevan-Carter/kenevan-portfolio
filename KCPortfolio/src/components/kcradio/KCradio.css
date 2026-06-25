@@ -1,109 +1,287 @@
-/* KCradio component styles (converted from Figma) */
-
-:root {
-  --radio-bg: #3D113F;
-  --radio-border: #80259A;
-  --accent-border: #914EA3;
-  --card-grad-start: #76248E;
-  --card-grad-end: #531762;
-}
-
-.radio-frame {
+.kc-radio {
+  width: 100%;
+  min-height: 620px;
+  padding: 28px;
+  padding-top: 100px;
+  border-radius: 28px;
+  background:
+    radial-gradient(circle at top left, rgba(179, 80, 255, 0.35), transparent 35%),
+    linear-gradient(135deg, #3d113f, #18051d 70%);
+  border: 1px solid rgba(199, 131, 255, 0.35);
+  color: white;
   box-sizing: border-box;
-  width: min(1360px, calc(100% - 64px));
-  margin: 120px auto 40px; /* leave space for navbar */
-  padding: 20px 40px 38px;
-  background: var(--radio-bg);
-  border: 1px solid var(--radio-border);
-  border-radius: 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 18px;
-  color: #fff;
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.35);
+  overflow: hidden;
 }
 
-/* Header */
-.radio-header {
+.radio-top {
+  padding-bottom: 28px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 28px;
+}
+
+.radio-label {
+  margin: 0 0 8px;
+  font-size: 0.75rem;
+  letter-spacing: 0.22rem;
+  color: #d7a6ff;
+  text-transform: uppercase;
+}
+
+.radio-top h2 {
+  margin: 0;
+  font-size: 2.2rem;
+  font-weight: 500;
+}
+
+.live-pill {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  gap: 8px;
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  font-size: 0.75rem;
+  letter-spacing: 0.08rem;
 }
 
-.kr-monogram {
-  font-family: 'Still Time', serif;
-  font-size: 48px;
-  color: #fff;
-  background: linear-gradient(180deg, #000000 0%, #A746AD 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  padding: 8px 12px;
-  border: 2px solid var(--accent-border);
-  border-radius: 8px;
+.live-pill span {
+  width: 8px;
+  height: 8px;
+  background: #ff4fd8;
+  border-radius: 50%;
+  box-shadow: 0 0 16px #ff4fd8;
 }
 
-.radio-title {
-  margin: 0 16px;
-  font-family: 'Still Time', serif;
-  font-size: 48px;
-  line-height: 58px;
-  color: #fff;
-  border: 2px solid var(--accent-border);
-  padding: 8px 12px;
-  border-radius: 8px;
+.now-playing {
+  display: grid;
+  grid-template-columns: 230px 1fr;
+  gap: 32px;
+  align-items: center;
+  margin-bottom: 34px;
 }
 
-.radio-inner {
-  display: flex;
-  gap: 20px;
-  align-items: flex-start;
+.album-wrap {
+  position: relative;
 }
 
-.player-card {
-  width: 396px;
-  padding: 20px 10px 10px;
-  border-radius: 20px;
-  box-shadow: 0 4px 4px rgba(0,0,0,0.3);
-  border: 1px solid rgba(195,87,212,0.6);
+.album-wrap::before {
+  content: "";
+  position: absolute;
+  inset: -14px;
+  border-radius: 28px;
+  background: linear-gradient(135deg, #914ea3, #ff4fd8, #5a1d70);
+  opacity: 0.45;
+  filter: blur(18px);
+  z-index: 0;
 }
 
-.current-song {
-  background: linear-gradient(180deg, var(--card-grad-start) 0%, var(--card-grad-end) 100%);
+.album-cover {
+  position: relative;
+  z-index: 1;
+  width: 230px;
+  height: 230px;
+  object-fit: cover;
+  border-radius: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
 }
 
-.recently-played {
-  background: linear-gradient(180deg, #792591 0%, #531762 100%);
+.track-info {
+  min-width: 0;
 }
 
-.cover {
-  width: 200px;
-  height: 210px;
-  border-radius: 16px;
-  background: #D9D9D9;
-  border: 1px solid var(--radio-border);
-  display: block;
-}
-
-.song-title {
-  font-family: 'Crimson Text', serif;
-  font-size: 26px;
-  margin: 8px 0 4px;
-}
-
-.song-artist {
-  font-family: 'Crimson Text', serif;
-  font-size: 20px;
-  color: #FF00FB;
+.small-title {
   margin: 0 0 8px;
+  color: #c998ff;
+  font-size: 0.9rem;
 }
 
-.song-album {
-  font-family: 'Crimson Text', serif;
-  font-style: italic;
-  font-size: 16px;
-  color: #ADA9A9;
+.track-info h1 {
+  margin: 0;
+  font-size: clamp(2.5rem, 6vw, 4.6rem);
+  line-height: 0.95;
+  font-weight: 500;
 }
 
-@media (max-width: 900px) {
-  .radio-frame { margin: 140px 20px 24px; padding: 18px; }
-  .radio-inner { flex-direction: column; align-items: center; }
+.track-info h3 {
+  margin: 14px 0 4px;
+  font-size: 1.4rem;
+  color: #f2dcff;
+  font-weight: 400;
+}
+
+.album-name {
+  margin: 0;
+  color: #a879bd;
+}
+
+.fake-player {
+  margin-top: 28px;
+  max-width: 460px;
+}
+
+.player-line {
+  width: 100%;
+  height: 7px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.16);
+  overflow: hidden;
+}
+
+.player-progress {
+  width: 42%;
+  height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(90deg, #d7a6ff, #ff4fd8);
+}
+
+.player-times {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8px;
+  font-size: 0.78rem;
+  color: #b78dcc;
+}
+
+.radio-bottom {
+  display: grid;
+  grid-template-columns: 1.4fr 0.8fr;
+  gap: 22px;
+}
+
+.recent-section,
+.stats-section {
+  padding: 20px;
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.recent-section h3,
+.stats-section h3 {
+  margin: 0 0 16px;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.track-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.track-row {
+  display: grid;
+  grid-template-columns: 52px 1fr auto;
+  gap: 12px;
+  align-items: center;
+  padding: 10px;
+  border-radius: 16px;
+  background: rgba(0, 0, 0, 0.16);
+}
+
+.track-row img {
+  width: 52px;
+  height: 52px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.track-text h4 {
+  margin: 0 0 4px;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.track-text p {
+  margin: 0;
+  font-size: 0.82rem;
+  color: #b98ed0;
+}
+
+.track-row span {
+  font-size: 0.75rem;
+  color: #9f75b4;
+  white-space: nowrap;
+}
+
+.stat-card {
+  padding: 14px;
+  border-radius: 16px;
+  margin-bottom: 12px;
+  background: rgba(0, 0, 0, 0.18);
+}
+
+.stat-card p {
+  margin: 0 0 6px;
+  color: #b98ed0;
+  font-size: 0.8rem;
+}
+
+.stat-card h4 {
+  margin: 0;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.artist-list {
+  margin-top: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.artist-stat {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  font-size: 0.85rem;
+}
+
+.artist-stat span {
+  color: #f4e6ff;
+}
+
+.artist-stat p {
+  margin: 0;
+  color: #a879bd;
+}
+
+@media (max-width: 850px) {
+  .now-playing {
+    grid-template-columns: 1fr;
+  }
+
+  .album-cover {
+    width: 100%;
+    max-width: 260px;
+    height: auto;
+    aspect-ratio: 1;
+  }
+
+  .radio-bottom {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 520px) {
+  .kc-radio {
+    padding: 20px;
+  }
+
+  .radio-top {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .track-row {
+    grid-template-columns: 48px 1fr;
+  }
+
+  .track-row span {
+    grid-column: 2;
+  }
 }

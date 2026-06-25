@@ -28,7 +28,8 @@
   align-items: center;
   justify-content: center;
   color: rgba(255, 255, 255, 0.9);
-  font-size: 30px;
+  font-size: clamp(18px, 4vw, 30px);
+  white-space: nowrap;
 }
 
 .navbar-monogram {
