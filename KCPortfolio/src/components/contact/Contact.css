@@ -1,0 +1,20 @@
+.contact-section {
+  padding: 4rem 0;
+}
+
+.contact-section .section-inner {
+  display: grid;
+  place-items: center;
+  text-align: center;
+  gap: 1.25rem;
+  max-width: 720px;
+  margin-inline: auto;
+  padding: 2.5rem;
+  background: rgba(255, 255, 255, 0.84);
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  border-radius: 28px;
+}
+
+.contact-section .button {
+  margin-top: 0.5rem;
+}

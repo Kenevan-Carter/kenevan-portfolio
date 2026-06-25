@@ -1,0 +1,102 @@
+.navbar {
+  box-sizing: border-box;
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 0px;
+
+  position: fixed;
+  width: 100%;
+  max-width: 1396px;
+  height: 80px;
+  top: 0;
+  left: 41.5%;
+  transform: translateX(-50%);
+
+  background: rgba(184, 26, 246, 0.05);
+  border: 1px solid #80259A;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  z-index: 2000;
+}
+
+.navbar-text {
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 30px;
+}
+
+.navbar-monogram {
+  font-family: 'Still Time', serif;
+  font-size: 64px;
+  font-weight: 400;
+  width: 100px;
+  height: 80px;
+  background: linear-gradient(180deg, #000000 0%, #A746AD 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-right: 2px solid rgba(200, 80, 220, 0.35);
+}
+
+
+.navbar-title {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  border-right: 2px solid rgba(200, 80, 220, 0.35);
+  font-size: 24px;
+  color: rgb(207, 35, 35);
+}
+
+.navbar-links {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 26px;
+  border-right: 1px solid rgba(200, 80, 220, 0.35);
+  border-left: 1px solid rgba(200, 80, 220, 0.35);
+  padding: 0 20px;
+}
+/*   About Projects Contact  */
+.navbar-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+  gap: 26px;
+}
+
+.navbar-links a:hover {
+  color: #e17cff;
+}
+
+.navbar-icons {
+/* Logo Frame */
+gap: 26px;
+padding: 5px;
+flex-grow: 0;
+}
+
+.navbar-icons a {
+  height: 100%;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  gap: 26px;
+  padding: 0 20px;
+  
+}
+
+.navbar-icons a:hover {
+  color: #e17cff;
+}

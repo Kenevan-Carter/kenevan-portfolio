@@ -1,0 +1,20 @@
+.skills-section {
+  padding: 4rem 0;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+}
+
+.skill-pill {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.85rem 1rem;
+  border-radius: 999px;
+  background: rgba(124, 58, 237, 0.08);
+  color: #4c1d95;
+  font-weight: 600;
+}

@@ -1,0 +1,23 @@
+/* Basic global styles for the portfolio app */
+:root {
+  color-scheme: light;
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #111827;
+  position: relative;
+width: 1440px;
+height: 1024px;
+
+background: linear-gradient(270deg, #3C103F 0%, #49284B 50%, #311032 100%);
+}
+
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0 2rem 2rem;
+}

@@ -1,22 +1,25 @@
-import './navbar/Navbar.css';
+import './Navbar.css';
 
 function Navbar() {
     return (
         <nav className="navbar">
             <div className="navbar-left">
                 <div className="navbar-monogram">KC</div>
-                <div className="navbar-name">Kenevan</div>
+            </div>
+
+            <div className="navbar-text">
+                <span>Will this extend as long as I need it to? lets see for ourselves</span>
             </div>
 
             <ul className="navbar-links">
-                <li><a href="/about">About</a></li>
-                <li><a href="/projects">Projects</a></li>
-                <li><a href="/contact">Contact</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
 
             <div className="navbar-icons">
                 <a className="icon-link" href="https://www.linkedin.com/" target="_blank" rel="noreferrer" aria-label="LinkedIn">LI</a>
-                <a className="icon-link" href="https://leetcode.com/" target="_blank" rel="noreferrer" aria-label="LeetCode">LC</a>
+                <a className="icon-link" href="https://leetcode.com/u/Kenevan/" target="_blank" rel="noreferrer" aria-label="LeetCode">LC</a>
                 <a className="icon-link" href="https://github.com/" target="_blank" rel="noreferrer" aria-label="GitHub">GH</a>
             </div>
         </nav>

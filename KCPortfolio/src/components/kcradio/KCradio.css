@@ -1,0 +1,109 @@
+/* KCradio component styles (converted from Figma) */
+
+:root {
+  --radio-bg: #3D113F;
+  --radio-border: #80259A;
+  --accent-border: #914EA3;
+  --card-grad-start: #76248E;
+  --card-grad-end: #531762;
+}
+
+.radio-frame {
+  box-sizing: border-box;
+  width: min(1360px, calc(100% - 64px));
+  margin: 120px auto 40px; /* leave space for navbar */
+  padding: 20px 40px 38px;
+  background: var(--radio-bg);
+  border: 1px solid var(--radio-border);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  color: #fff;
+}
+
+/* Header */
+.radio-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.kr-monogram {
+  font-family: 'Still Time', serif;
+  font-size: 48px;
+  color: #fff;
+  background: linear-gradient(180deg, #000000 0%, #A746AD 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding: 8px 12px;
+  border: 2px solid var(--accent-border);
+  border-radius: 8px;
+}
+
+.radio-title {
+  margin: 0 16px;
+  font-family: 'Still Time', serif;
+  font-size: 48px;
+  line-height: 58px;
+  color: #fff;
+  border: 2px solid var(--accent-border);
+  padding: 8px 12px;
+  border-radius: 8px;
+}
+
+.radio-inner {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.player-card {
+  width: 396px;
+  padding: 20px 10px 10px;
+  border-radius: 20px;
+  box-shadow: 0 4px 4px rgba(0,0,0,0.3);
+  border: 1px solid rgba(195,87,212,0.6);
+}
+
+.current-song {
+  background: linear-gradient(180deg, var(--card-grad-start) 0%, var(--card-grad-end) 100%);
+}
+
+.recently-played {
+  background: linear-gradient(180deg, #792591 0%, #531762 100%);
+}
+
+.cover {
+  width: 200px;
+  height: 210px;
+  border-radius: 16px;
+  background: #D9D9D9;
+  border: 1px solid var(--radio-border);
+  display: block;
+}
+
+.song-title {
+  font-family: 'Crimson Text', serif;
+  font-size: 26px;
+  margin: 8px 0 4px;
+}
+
+.song-artist {
+  font-family: 'Crimson Text', serif;
+  font-size: 20px;
+  color: #FF00FB;
+  margin: 0 0 8px;
+}
+
+.song-album {
+  font-family: 'Crimson Text', serif;
+  font-style: italic;
+  font-size: 16px;
+  color: #ADA9A9;
+}
+
+@media (max-width: 900px) {
+  .radio-frame { margin: 140px 20px 24px; padding: 18px; }
+  .radio-inner { flex-direction: column; align-items: center; }
+}

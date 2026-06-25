@@ -30,10 +30,17 @@
   }
 }
 
+@font-face {
+  font-family: 'Still Time';
+  src: url('/src/assets/fonts/still-time.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --text: #9ca3af;
-    --text-h: #f3f4f6;
+    --text-h: #2d4a83;
     --bg: #16171d;
     --border: #2e303a;
     --code-bg: #1f2028;
@@ -55,12 +62,12 @@ body {
 }
 
 #root {
-  width: 1126px;
+  width: min(1440px, 100%);
   max-width: 100%;
   margin: 0 auto;
   text-align: center;
   border-inline: 1px solid var(--border);
-  min-height: 100svh;
+  min-height: 1024px;
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
