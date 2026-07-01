@@ -1,7 +1,8 @@
 .kc-radio {
-  width: 100%;
-  min-height: 620px;
+  width: 1200px;
+  margin: 0 auto;
   padding: 28px;
+  
   padding-top: 100px;
   border-radius: 28px;
   background:
@@ -12,25 +13,34 @@
   box-sizing: border-box;
   box-shadow: 0 24px 70px rgba(0, 0, 0, 0.35);
   overflow: hidden;
+  
 }
 
 .radio-top {
+  /* top of the radio screen. */
   padding-bottom: 28px;
   display: flex;
+  /*justify content means how the items are aligned along the main axis of the flex container. 
+  In this case, it is set to space-between, which means that the items will be evenly distributed 
+  along the main axis, with the first item aligned to the start of the container and the last item 
+  aligned to the end of the container. The remaining items will be spaced evenly in between.*/
   justify-content: space-between;
+  /*flex start is used to align the items along the cross axis of the flex container. In this case, 
+  it is set to flex-start, this means that is flush against the start of the contianer */
   align-items: flex-start;
   margin-bottom: 28px;
 }
 
 .radio-label {
+  /*top label*/
   margin: 0 0 8px;
-  font-size: 0.75rem;
-  letter-spacing: 0.22rem;
+  font-size: 16px;
+  letter-spacing: 0.08rem;
   color: #d7a6ff;
-  text-transform: uppercase;
 }
 
 .radio-top h2 {
+  /*last played track title*/
   margin: 0;
   font-size: 2.2rem;
   font-weight: 500;
@@ -59,7 +69,7 @@
 .now-playing {
   display: grid;
   grid-template-columns: 230px 1fr;
-  gap: 32px;
+  gap: 38px;
   align-items: center;
   margin-bottom: 34px;
 }

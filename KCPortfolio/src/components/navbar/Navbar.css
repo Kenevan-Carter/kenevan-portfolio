@@ -18,7 +18,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: linear-gradient(90deg, #FFFFFF 0%, #730F90 100%);
+  /*color: linear-gradient(90deg, #FFFFFF 0%, #730F90 100%);*/
+  color: #FFFFFF;
   font-family: 'Still Time';
   font-size: 48px;
   /* Welcome to the landing page of Kenevans Creative output */

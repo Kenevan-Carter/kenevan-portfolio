@@ -39,13 +39,13 @@ const topArtists = [
 
 function KCradio() {
   const currentTrack = recentTracks[0];
-
+ 
   return (
     <section className="kc-radio">
       <div className="radio-top">
         <div>
-          <p className="radio-label">LIVE FROM KC RADIO</p>
-          <h2>Now Spinning</h2>
+          <p className="radio-label">KENEVAN CARTER RADIO</p>
+          <h2>MOST RECENT TRACK </h2>
         </div>
 
         <div className="live-pill">
