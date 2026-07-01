@@ -1,25 +1,16 @@
 .navbar {
-  box-sizing: border-box;
-
-  /* Auto layout */
+  /* turns element into flex container: making it easier to line up elements inside of it:
+  eg. lines it up horizontally*/
   display: flex;
-  flex-direction: row;
+
+  /* centers items vertically in the flex container.
+  makes items sit in the middle vertically instead of sticking to the top of the container*/
   align-items: center;
-  padding: 0px;
-  gap: 0px;
 
-  position: fixed;
-  width: 100%;
-  max-width: 1396px;
   height: 80px;
-  top: 0;
-  left: 41.5%;
-  transform: translateX(-50%);
-
   background: rgba(184, 26, 246, 0.05);
   border: 1px solid #80259A;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  z-index: 2000;
 }
 
 .navbar-text {
@@ -27,9 +18,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: rgba(255, 255, 255, 0.9);
-  font-size: clamp(18px, 4vw, 30px);
-  white-space: nowrap;
+  color: linear-gradient(90deg, #FFFFFF 0%, #730F90 100%);
+  font-family: 'Still Time';
+  font-size: 48px;
+  /* Welcome to the landing page of Kenevans Creative output */
 }
 
 .navbar-monogram {
