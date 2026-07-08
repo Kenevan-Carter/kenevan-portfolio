@@ -1,4 +1,7 @@
 import './Navbar.css';
+import linkedinIcon from '../../assets/images/linkedin.png';
+import leetIcon from '../../assets/images/leet.png';
+import githubIcon from '../../assets/images/github.png';
 
 function Navbar() {
     return (
@@ -18,9 +21,15 @@ function Navbar() {
             </ul>
 
             <div className="navbar-icons">
-                <a className="icon-link" href="https://www.linkedin.com/" target="_blank" rel="noreferrer" aria-label="LinkedIn">LI</a>
-                <a className="icon-link" href="https://leetcode.com/u/Kenevan/" target="_blank" rel="noreferrer" aria-label="LeetCode">LC</a>
-                <a className="icon-link" href="https://github.com/" target="_blank" rel="noreferrer" aria-label="GitHub">GH</a>
+                <a className="icon-link" href="https://www.linkedin.com/" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+                    <img src={linkedinIcon} alt="LinkedIn" />
+                </a>
+                <a className="icon-link" href="https://leetcode.com/u/Kenevan/" target="_blank" rel="noreferrer" aria-label="LeetCode">
+                    <img src={leetIcon} alt="LeetCode" />
+                </a>
+                <a className="icon-link" href="https://github.com/" target="_blank" rel="noreferrer" aria-label="GitHub">
+                    <img src={githubIcon} alt="GitHub" />
+                </a>
             </div>
         </nav>
     );

@@ -1,22 +1,15 @@
 import './Location.css';
-
+import minnesotaImage from '../../assets/images/minnesota.png';
 
 function Location() {
   return (
     <section id="location" className="location">
       <div className="location-card">
-        <div className="location-copy">
-          <p className="section-label">Location</p>
-          <h2>Based in Minneapolis</h2>
-          <p className="location-intro">
-            I’m currently based in Minneapolis, Minnesota, and I’m open to remote opportunities and collaborations from anywhere in the world.
-          </p>
-          <div className="location-badges">
-            <span>Remote Friendly</span>
-            <span>US & Global</span>
-          </div>
+        <img className="location-background" src={minnesotaImage} alt="Minnesota map background" />
+        <div className="location-pin-pill" aria-label="Located in Minneapolis">
+          <span className="location-pin-dot"></span>
+          <span>Minneapolis</span>
         </div>
-
       </div>
     </section>
   );
