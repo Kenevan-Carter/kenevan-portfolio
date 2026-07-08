@@ -8,7 +8,7 @@
   background:
     radial-gradient(circle at top left, rgba(179, 80, 255, 0.35), transparent 35%),
     linear-gradient(135deg, #3d113f, #18051d 70%);
-  border: 1px solid rgba(199, 131, 255, 0.35);
+  border: 1px solid #80259A;
   color: white;
   box-sizing: border-box;
   box-shadow: 0 24px 70px rgba(0, 0, 0, 0.35);

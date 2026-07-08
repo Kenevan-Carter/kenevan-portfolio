@@ -45,7 +45,7 @@ function KCradio() {
       <div className="radio-top">
         <div>
           <p className="radio-label">KENEVAN CARTER RADIO</p>
-          <h2>MOST RECENT TRACK </h2>
+          <h2>Here's What I'm Currently Listening To </h2>
         </div>
 
         <div className="live-pill">
@@ -64,7 +64,7 @@ function KCradio() {
         </div>
 
         <div className="track-info">
-          <p className="small-title">Recently Played</p>
+          <p className="small-title">Last Played</p>
           <h1>{currentTrack.title}</h1>
           <h3>{currentTrack.artist}</h3>
           <p className="album-name">{currentTrack.album}</p>
