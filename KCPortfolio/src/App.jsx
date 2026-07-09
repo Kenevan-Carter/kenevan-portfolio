@@ -9,6 +9,7 @@ import Contact from "./components/contact/Contact.jsx";
 import Skills from "./components/skills/Skills.jsx";
 import RainEffect from "./components/raineffect/RainEffect.jsx";
 import Location from "./components/location/Location.jsx";
+import AppleMusicConnect from "./components/applemusic/AppleMusicConnect";
 
 function App() {
   const [rainOn, setRainOn] = useState(true);
@@ -32,6 +33,7 @@ function App() {
         <Projects />
         <Skills />
         <Contact />
+        <AppleMusicConnect/>
       </main>
     </div>
   );

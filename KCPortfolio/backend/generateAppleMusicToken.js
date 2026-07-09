@@ -1,7 +1,6 @@
-require("dotenv").config();
-
-const fs = require("fs");
-const jwt = require("jsonwebtoken");
+import "dotenv/config";
+import fs from "fs";
+import jwt from "jsonwebtoken";
 
 const teamId = process.env.APPLE_TEAM_ID;
 const keyId = process.env.APPLE_KEY_ID;
@@ -15,12 +14,11 @@ const privateKey = fs.readFileSync(privateKeyPath, "utf8");
 
 const now = Math.floor(Date.now() / 1000);
 
-// Apple Music developer token
 const token = jwt.sign(
   {
     iss: teamId,
     iat: now,
-    exp: now + 60 * 60 * 24 * 30, // 30 days
+    exp: now + 60 * 60 * 24 * 30,
   },
   privateKey,
   {
@@ -33,5 +31,3 @@ const token = jwt.sign(
 );
 
 console.log(token);
-
-
