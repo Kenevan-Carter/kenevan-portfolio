@@ -9,6 +9,7 @@ import Contact from "./components/contact/Contact.jsx";
 import Skills from "./components/skills/Skills.jsx";
 import RainEffect from "./components/raineffect/RainEffect.jsx";
 import Location from "./components/location/Location.jsx";
+import Globe from "./components/globe/Globe";
 
 function App() {
   const [rainOn, setRainOn] = useState(true);
@@ -28,9 +29,8 @@ function App() {
         <Navbar />
         <KCradio />
         <About />
-        <Location />
+        <Globe />
         <Projects />
-        <Skills />
         <Contact />
       </main>
     </div>

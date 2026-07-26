@@ -1,0 +1,22 @@
+.globe-section {
+    width: 100%;
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+    padding: 4rem 0;
+  }
+  
+  .globe-section h2 {
+    color: white;
+    margin-bottom: 2rem;
+  }
+  
+  #globe-chart {
+    width: 400px;
+    height: 400px;
+  
+    max-width: 90vw;
+    max-height: 90vw;
+  }

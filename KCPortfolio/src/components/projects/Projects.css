@@ -154,10 +154,12 @@
   font-size: 0.85rem;
 }
 .modal-close {
-  position: absolute;
+  position: sticky;
 
   top: 1rem;
-  right: 1rem;
+  margin-left: auto;
+
+  display: block;
 
   background: none;
   border: none;
@@ -166,8 +168,9 @@
   font-size: 2rem;
 
   cursor: pointer;
-}
 
+  z-index: 10;
+}
 @media (max-width: 920px) {
   .projects-grid {
     grid-template-columns: 1fr 1fr;

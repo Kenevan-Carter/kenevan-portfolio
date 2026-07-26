@@ -83,20 +83,18 @@ function Projects() {
       'Using a public dataset containing Spotify audio features, I cleaned and prepared the data, selected relevant acoustic features such as danceability, energy, speechiness, and valence, and trained each model to classify songs as either Hip-Hop or non-Hip-Hop.',
     skills: [
         'Python',
-        'PyQt5',
-        'Slurm',
-        'Bash',
-        'HPC',
-        'nnU-Net',
-        'SynthSeg',
-        'Workflow Automation'
+        'scikit-learn',
+        'Pandas',
+        'Numpy',
+        'Machine Learning',
+        'Data Preprocessing'
     ],
 
       challenges:
         'One of the largest challenges was coordinating multiple external research tools while keeping the user experience simple and providing useful job monitoring and error handling.',
 
       impact:
-        'Reduced a multi-step model training workflow into a centralized interface and made segmentation training more accessible to researchers.',
+        'Gained experience using scikit-learn as well as learning the basics of model configuration techniques, hyperparameter tuning, and performance evaluation.',
 
     },
 
