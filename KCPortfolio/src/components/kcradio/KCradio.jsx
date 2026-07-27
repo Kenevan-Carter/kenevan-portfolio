@@ -85,7 +85,7 @@ function RecentlyPlayedBox({ tracks, loading }) {
 function TopAlbumBox({ album, loading }) {
   return (
     <div className="kc-box">
-      <h3>Top Album This Month</h3>
+      <h3>Top Albums This Month</h3>
       <div className="kc-box-body">
         {loading && <p className="kc-empty">Loading album…</p>}
         {!loading && !album && <p className="kc-empty">No album found.</p>}
@@ -173,9 +173,12 @@ function KCradio() {
         </div>
         <div className="kc-radio-grid">
           <RecentlyPlayedBox tracks={recentlyPlayed} loading={loading} />
-          <TopAlbumBox album={displayTopAlbum} loading={loading && !musicData} />
-          <PlaylistsBox playlists={displayPlaylists} loading={loading && !musicData} />
-        </div>
+          <div className="kc-radio-right">
+            <TopAlbumBox album={displayTopAlbum} loading={loading && !musicData} />
+            <PlaylistsBox playlists={displayPlaylists} loading={loading && !musicData} />
+          </div>
+          </div>
+    
       </section>
     </div>
   );

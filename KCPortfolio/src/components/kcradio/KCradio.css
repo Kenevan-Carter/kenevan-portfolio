@@ -24,7 +24,11 @@
   padding: 1.75rem;
   border-radius: 20px;
   border: 1px solid rgba(224, 170, 255, 0.55);
-  background: linear-gradient(180deg, rgba(58, 6, 82, 0.95), rgba(18, 0, 28, 0.97));
+  background: linear-gradient(
+    180deg,
+    rgba(58, 6, 82, 0.95),
+    rgba(18, 0, 28, 0.97)
+  );
   box-shadow:
     0 0 0 1px rgba(157, 78, 221, 0.25),
     0 0 45px rgba(157, 78, 221, 0.35),
@@ -58,59 +62,67 @@
   font-size: 0.85rem;
 }
 
-.apple-music-connect {
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
-  margin-bottom: 1.25rem;
-}
 
-.apple-music-connect button {
-  padding: 0.5rem 1rem;
-  border: 1px solid rgba(224, 170, 255, 0.55);
-  border-radius: 999px;
-  background: rgba(157, 78, 221, 0.18);
-  color: white;
-  font-size: 0.85rem;
-  cursor: pointer;
-  transition: background 0.2s ease;
-}
-
-.apple-music-connect button:hover {
-  background: rgba(157, 78, 221, 0.32);
-}
-
-.apple-music-connect p {
-  margin: 0;
-  color: #bda7c8;
-  font-size: 0.85rem;
-}
-
-/* ===== Three-box grid ===== */
+/* ===== Main two-column layout ===== */
 
 .kc-radio-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+
+  /* Recently Played | Right side */
+  grid-template-columns: 0.9fr 2fr;
+
   gap: 1.25rem;
-  align-items: start;
+  align-items: stretch;
 }
 
-@media (max-width: 900px) {
-  .kc-radio-grid {
-    grid-template-columns: 1fr;
-  }
+
+/* Right side: top card + bottom card */
+
+.kc-radio-right {
+  display: grid;
+
+  grid-template-rows: 1fr 1fr;
+
+  gap: 1.25rem;
+
+  width: 100%;
+  min-width: 0;
 }
+
+
+/* ===== Shared boxes ===== */
 
 .kc-box {
   display: flex;
   flex-direction: column;
-  height: 500px;
+
+  width: 100%;
+  box-sizing: border-box;
+
   padding: 1.25rem;
+
   border: 1px solid #80259A;
   border-radius: 16px;
+
   background: rgba(30, 0, 45, 0.8);
   color: white;
 }
+
+
+/* Keep Recently Played tall */
+
+.kc-radio-grid > .kc-box {
+  height: 500px;
+}
+
+
+/* Make the two right-side cards split that height */
+
+.kc-radio-right .kc-box {
+  height: auto;
+  min-height: 0;
+}
+
 
 .kc-box h3 {
   margin: 0 0 1rem;
@@ -130,6 +142,7 @@
   font-size: 0.9rem;
 }
 
+
 /* ===== Track list (Recently Played) ===== */
 
 .track-list {
@@ -141,13 +154,20 @@
   display: flex;
   align-items: center;
   text-align: left;
+
   gap: 0.85rem;
   padding: 0.65rem;
+
   border-radius: 12px;
+
   background: rgba(255, 255, 255, 0.06);
+
   color: white;
   text-decoration: none;
-  transition: transform 0.2s ease, background 0.2s ease;
+
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease;
 }
 
 .track-card:hover {
@@ -157,9 +177,12 @@
 
 .track-card img {
   flex-shrink: 0;
+
   width: 48px;
   height: 48px;
+
   border-radius: 10px;
+
   object-fit: cover;
 }
 
@@ -170,51 +193,72 @@
 
 .track-card p {
   margin: 0;
+
   color: #e0aaff;
+
   font-size: 0.85rem;
 }
 
 .track-card span {
   display: block;
+
   margin-top: 0.15rem;
+
   color: #bda7c8;
+
   font-size: 0.8rem;
 }
+
 
 /* ===== Top album ===== */
 
 .top-album-card {
   display: flex;
-  flex-direction: column;
+  align-items: center;
+
   gap: 1rem;
+
+  width: 100%;
+
   text-decoration: none;
   color: white;
 }
 
 .top-album-card img {
-  width: 100%;
-  aspect-ratio: 1;
+  width: 120px;
+  height: 120px;
+
+  flex-shrink: 0;
+
   border-radius: 12px;
+
   object-fit: cover;
 }
 
 .top-album-card h4 {
   margin: 0 0 0.25rem;
+
   font-size: 1.1rem;
 }
 
 .top-album-card p {
   margin: 0;
+
   color: #e0aaff;
+
   font-size: 0.9rem;
 }
 
 .top-album-card span {
   display: block;
+
   margin-top: 0.35rem;
+
   color: #bda7c8;
+
   font-size: 0.8rem;
 }
+
 
 /* ===== Playlists ===== */
 
@@ -226,13 +270,20 @@
 .playlist-card {
   display: flex;
   align-items: center;
+
   gap: 0.75rem;
   padding: 0.6rem;
+
   border-radius: 12px;
+
   background: rgba(255, 255, 255, 0.06);
+
   color: white;
   text-decoration: none;
-  transition: transform 0.2s ease, background 0.2s ease;
+
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease;
 }
 
 .playlist-card:hover {
@@ -242,18 +293,44 @@
 
 .playlist-card img {
   flex-shrink: 0;
+
   width: 44px;
   height: 44px;
+
   border-radius: 8px;
+
   object-fit: cover;
 }
 
 .playlist-card h4 {
   margin: 0 0 0.15rem;
+
   font-size: 0.9rem;
 }
 
 .playlist-card span {
   color: #bda7c8;
+
   font-size: 0.8rem;
+}
+
+
+/* ===== Responsive ===== */
+
+@media (max-width: 900px) {
+  .kc-radio-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .kc-radio-right {
+    grid-template-rows: auto auto;
+  }
+
+  .kc-radio-grid > .kc-box {
+    height: 500px;
+  }
+
+  .kc-radio-right .kc-box {
+    min-height: 250px;
+  }
 }
