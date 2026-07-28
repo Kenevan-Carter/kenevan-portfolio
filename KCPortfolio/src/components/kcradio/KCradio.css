@@ -80,15 +80,14 @@
 
 .kc-radio-right {
   display: grid;
-
-  grid-template-rows: 1fr 1fr;
-
+  grid-template-rows: 200px 280px;
   gap: 1.25rem;
 
   width: 100%;
   min-width: 0;
-}
 
+  align-content: start;
+}
 
 /* ===== Shared boxes ===== */
 
@@ -219,7 +218,6 @@
   gap: 1rem;
 
   width: 100%;
-
   text-decoration: none;
   color: white;
 }
