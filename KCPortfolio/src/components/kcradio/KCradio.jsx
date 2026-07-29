@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
 import "./KCradio.css";
 
-const API_URL = "http://localhost:3001/api/kc-radio";
+const API_URL =
+  import.meta.env.VITE_API_URL || "http://localhost:3001";
 
 function useKCRadioData() {
   const [data, setData] = useState({
@@ -19,7 +20,7 @@ function useKCRadioData() {
 
     async function getKCData() {
       try {
-        const res = await fetch(API_URL);
+        const res = await fetch(`${API_URL}/api/kc-radio`);
 
         if (!res.ok) {
           throw new Error(`Request failed: ${res.status}`);
