@@ -5,15 +5,17 @@ import fs from "fs";
 import jwt from "jsonwebtoken";
 
 const app = express();
-const PORT = 3001;
+const PORT = process.env.PORT || 3001;
 
 app.use(cors());
 
 function generateAppleMusicToken() {
-  const privateKey = fs.readFileSync(
-    process.env.APPLE_PRIVATE_KEY_PATH,
-    "utf8"
-  );
+  const privateKey = process.env.APPLE_PRIVATE_KEY
+    ? process.env.APPLE_PRIVATE_KEY.replace(/\\n/g, "\n")
+    : fs.readFileSync(
+        process.env.APPLE_PRIVATE_KEY_PATH,
+        "utf8"
+      );
 
   const now = Math.floor(Date.now() / 1000);
 
@@ -33,7 +35,6 @@ function generateAppleMusicToken() {
     }
   );
 }
-
 app.get("/api/apple-music-token", (req, res) => {
   try {
     const token = generateAppleMusicToken();
@@ -206,9 +207,6 @@ app.get("/api/kc-radio", async (req, res) => {
         type: item.type,
       }));
 
-    /*
-      Send everything to React
-    */
 
     res.json({
       updatedAt: new Date().toISOString(),
