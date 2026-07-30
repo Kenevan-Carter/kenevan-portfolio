@@ -20,8 +20,6 @@ function Globe() {
 
         projection: am5map.geoOrthographic(),
 
-        panX: "rotateX",
-        panY: "rotateY",
 
         wheelY: "none",
 
