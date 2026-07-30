@@ -1,6 +1,9 @@
 .projects-section {
   padding: 4rem 0;
 }
+.section-label{
+  font-size: 2rem;
+}
 
 .projects-grid {
   display: grid;
