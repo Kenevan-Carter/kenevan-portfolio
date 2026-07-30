@@ -57,7 +57,7 @@ function Projects() {
       title: 'Hip-Hop Genre Classifier',
 
       description:
-        'Built and compared four supervised machine learning models to classify Hip-Hop tracks using Spotify audio features.',
+        'Built and compared four supervised machine learning models to classify Hip-Hop tracks using Spotify audio features',
 
       moreInfo:
         'This project explored whether quantitative Spotify audio features could be used to distinguish Hip-Hop songs from other genres. I trained and compared Random Forest, K-Nearest Neighbors, Logistic Regression, and Gaussian Naive Bayes models, with Random Forest achieving the best overall performance.',
