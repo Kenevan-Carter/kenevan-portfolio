@@ -36,6 +36,7 @@
 }
 .rain-toggle {
   position: fixed;
+  margin-top: 3.5rem;
   top: 24px;
   right: 24px;
   z-index: 10;

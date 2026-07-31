@@ -11,7 +11,7 @@ function Navbar() {
             </div>
 
             <div className="navbar-text">
-                <span>Will this extend as long as I need it to? lets see for ourselves</span>
+                <span>Kenevan Carter - Software Engineer - University of Minnesota </span>
             </div>
 
             <ul className="navbar-links">

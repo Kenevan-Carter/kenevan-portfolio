@@ -118,20 +118,18 @@ function Projects() {
         link: 'PASTE-GITHUB-LINK-HERE',
       },
       description:
-        'A user-friendly interface designed to automate and streamline the process of training deep learning algorithms for brain segmentation using SynthSeg and nnUNet.',
+        'Coming Soon.',
 
       overview:
-        'A desktop application designed to simplify the configuration and training of medical image segmentation models in a research environment.',
+        'Coming Soon.',
 
       problem:
-        'Researchers previously had to manually configure datasets, command-line arguments, model settings, and Slurm jobs across multiple tools.',
+        'Coming Soon.',
 
       role:
-        'In collaboration with another intern, we designed and developed the PyQt5 interface and connected the GUI to the backend training. Added functionality for Preset configurations and implimented scripts for job monitoring.',
-
+      'Coming Soon.',
       approach:
-        'The application gathers user configuration through the GUI, generates the necessary training settings, and launches model training jobs on the HPC cluster using Slurm.',
-
+        'Coming Soon.',
       skills: [
         'Python',
         'PyQt5',
@@ -144,10 +142,10 @@ function Projects() {
       ],
 
       challenges:
-        'One of the largest challenges was coordinating multiple external research tools while keeping the user experience simple and providing useful job monitoring and error handling.',
+        'Coming Soon.',
 
       impact:
-        'Reduced a multi-step model training workflow into a centralized interface and made segmentation training more accessible to researchers.',
+        'Coming Soon.',
 
     },
   ];
