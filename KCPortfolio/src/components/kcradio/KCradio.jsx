@@ -251,7 +251,7 @@ function KCradio() {
             </p>
 
             <h2>
-              My Apple Music
+              Apple Music Activity
             </h2>
           </div>
 

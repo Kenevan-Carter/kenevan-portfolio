@@ -13,6 +13,7 @@ import Globe from "./components/globe/Globe";
 
 function App() {
   const [rainOn, setRainOn] = useState(true);
+  
 
   return (
     <div className="App">

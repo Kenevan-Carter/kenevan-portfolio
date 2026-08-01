@@ -155,7 +155,6 @@ function Projects() {
       <div className="section-inner">
 
         <p className="section-label">_ Projects _</p>
-        <h2>Example work</h2>
 
         <div className="projects-grid">
           {projects.map((project) => (

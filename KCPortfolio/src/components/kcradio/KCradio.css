@@ -50,6 +50,12 @@
   font-size: 0.75rem;
   text-transform: uppercase;
 }
+.eyebrow h2{
+  
+    margin: 0;
+    font-size: 1.2rem;
+    color: #880fce;
+}
 
 .kc-radio h2 {
   margin: 0;
@@ -258,7 +264,7 @@
 }
 
 
-/* ===== Playlists ===== */
+/*  playlists */
 
 .playlist-list {
   display: grid;
@@ -291,18 +297,14 @@
 
 .playlist-card img {
   flex-shrink: 0;
-
   width: 44px;
   height: 44px;
-
   border-radius: 8px;
-
   object-fit: cover;
 }
 
 .playlist-card h4 {
   margin: 0 0 0.15rem;
-
   font-size: 0.9rem;
 }
 
@@ -313,7 +315,7 @@
 }
 
 
-/* ===== Responsive ===== */
+/* responsive  component*/
 
 @media (max-width: 900px) {
   .kc-radio-grid {
