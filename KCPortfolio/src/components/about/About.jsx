@@ -44,7 +44,7 @@ function About() {
           </div>
 
           <div className="about-link-wrapper">
-            <a className="button button-primary about-link" href="/kenevan_carter_resume.pdf" target="_blank" rel="noopener noreferrer">
+            <a className="button button-primary about-link" href="/KenevanCarterResumeAug2026.pdf" target="_blank" rel="noopener noreferrer">
               View Resume
             </a>
           </div>
