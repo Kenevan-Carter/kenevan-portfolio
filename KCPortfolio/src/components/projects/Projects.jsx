@@ -4,6 +4,7 @@ import { useState } from "react";
 import projectImage from "../../assets/images/smg.png";
 import hiphop from "../../assets/images/songclassifier.png";
 import comingsoon from "../../assets/images/comingsoon.png";
+import streakpicks from "../../assets/images/streakpicks.png";
 
 function Projects() {
   const [selectedProject, setSelectedProject] = useState(null);
@@ -99,15 +100,13 @@ function Projects() {
     },
 
     {
-      title: 'Coming Soon...',
+      title: 'StreakPicks',
 
-      description:
-        'An up and coming project that will change the way the entire world thinks about everything. This project will not only revolutionize everything but also everything and anything else.',
 
       moreInfo:
         'More information about this project will be available soon.',
 
-      image: comingsoon,
+      image: streakpicks,
 
       left: {
         text: 'Learn More',
@@ -115,10 +114,10 @@ function Projects() {
 
       right: {
         text: 'GitHub',
-        link: 'PASTE-GITHUB-LINK-HERE',
+        link: 'https://github.com/Kenevan-Carter/streakpot',
       },
       description:
-        'Coming Soon.',
+        'A full-stack sports prediction platform where users enter contests, make picks across entire game slates, and compete based on overall prediction accuracy.',
 
       overview:
         'Coming Soon.',

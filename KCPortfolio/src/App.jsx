@@ -6,9 +6,7 @@ import KCradio from "./components/kcradio/KCradio.jsx";
 import About from "./components/about/About.jsx";
 import Projects from "./components/projects/Projects.jsx";
 import Contact from "./components/contact/Contact.jsx";
-import Skills from "./components/skills/Skills.jsx";
 import RainEffect from "./components/raineffect/RainEffect.jsx";
-import Location from "./components/location/Location.jsx";
 import Globe from "./components/globe/Globe";
 
 function App() {
