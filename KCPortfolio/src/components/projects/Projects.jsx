@@ -102,10 +102,6 @@ function Projects() {
     {
       title: 'StreakPicks',
 
-
-      moreInfo:
-        'More information about this project will be available soon.',
-
       image: streakpicks,
 
       left: {
@@ -117,35 +113,33 @@ function Projects() {
         link: 'https://github.com/Kenevan-Carter/streakpot',
       },
       description:
-        'A full-stack sports prediction platform where users enter contests, make picks across entire game slates, and compete based on overall prediction accuracy.',
-
-      overview:
-        'Coming Soon.',
-
-      problem:
-        'Coming Soon.',
-
-      role:
-      'Coming Soon.',
-      approach:
-        'Coming Soon.',
-      skills: [
-        'Python',
-        'PyQt5',
-        'Slurm',
-        'Bash',
-        'HPC',
-        'nnU-Net',
-        'SynthSeg',
-        'Workflow Automation'
-      ],
-
-      challenges:
-        'Coming Soon.',
-
-      impact:
-        'Coming Soon.',
-
+      description:
+      'A full-stack sports prediction platform where users enter contests, make picks across entire game slates, and compete based on overall prediction accuracy.',
+    
+    overview:
+      'Built a full-stack sports prediction platform that allows users to browse contests, select winners across multi-game slates, track their picks, and compare results with other users.',
+    
+    problem:
+      'Traditional sports betting often focuses on individual wagers, while prediction contests can be fragmented across different platforms. The goal was to create a simple, centralized experience for making predictions across an entire slate of games.',
+    
+    role:
+      'Designed and developed the application from the ground up, including the frontend interface, authentication, database structure, contest system, pick submission flow, and sports data integration.',
+    
+    approach:
+      'Built the frontend with React and Vite, used Supabase and PostgreSQL for authentication and data storage, integrated sports data APIs for schedules and results, and organized the application into reusable components, hooks, utilities, and services.',
+    
+    skills: [
+      'React',
+      'JavaScript',
+      'Vite',
+      'Supabase',
+      'PostgreSQL',
+      'REST APIs',
+      'Authentication',
+      'Database Design',
+      'Full-Stack Development',
+      'Git'
+    ],
     },
   ];
 
