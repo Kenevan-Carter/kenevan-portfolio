@@ -112,9 +112,8 @@ function Projects() {
         text: 'GitHub',
         link: 'https://github.com/Kenevan-Carter/streakpot',
       },
-      description:
-      description:
-      'A full-stack sports prediction platform where users enter contests, make picks across entire game slates, and compete based on overall prediction accuracy.',
+    description:
+      'A full-stack sports prediction hub where users can enter contests, make picks across a slate of game, and compete based on overall prediction accuracy.',
     
     overview:
       'Built a full-stack sports prediction platform that allows users to browse contests, select winners across multi-game slates, track their picks, and compare results with other users.',
@@ -126,7 +125,7 @@ function Projects() {
       'Designed and developed the application from the ground up, including the frontend interface, authentication, database structure, contest system, pick submission flow, and sports data integration.',
     
     approach:
-      'Built the frontend with React and Vite, used Supabase and PostgreSQL for authentication and data storage, integrated sports data APIs for schedules and results, and organized the application into reusable components, hooks, utilities, and services.',
+      'Built the frontend with React and Vite, used Supabase and PostgreSQL for authentication and data storage, integrated sports data APIs for schedules and results, and organized the application into reusable components like hooks, utilities, and services.',
     
     skills: [
       'React',
@@ -140,7 +139,7 @@ function Projects() {
       'Full-Stack Development',
       'Git'
     ],
-    },
+    }
   ];
 
   return (
