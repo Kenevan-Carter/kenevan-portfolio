@@ -14,7 +14,7 @@
     0 0 0 1px rgba(157, 78, 221, 0.25),
     0 0 45px rgba(157, 78, 221, 0.35),
     inset 0 1px 0 rgba(255, 255, 255, 0.08);
-  border: 1px solid #80259A;
+    border: 1px solid rgba(224, 170, 255, 0.55);
 
   overflow: hidden;
 }

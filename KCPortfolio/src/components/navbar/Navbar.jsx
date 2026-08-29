@@ -27,7 +27,7 @@ function Navbar() {
                 <a className="icon-link" href="https://leetcode.com/u/Kenevan/" target="_blank" rel="noreferrer" aria-label="LeetCode">
                     <img src={leetIcon} alt="LeetCode" />
                 </a>
-                <a className="icon-link" href="https://github.com/" target="_blank" rel="noreferrer" aria-label="GitHub">
+                <a className="icon-link" href="https://github.com/Kenevan-Carter" target="_blank" rel="noreferrer" aria-label="GitHub">
                     <img src={githubIcon} alt="GitHub" />
                 </a>
             </div>

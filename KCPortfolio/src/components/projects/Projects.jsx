@@ -109,8 +109,8 @@ function Projects() {
       },
 
       right: {
-        text: 'GitHub',
-        link: 'https://github.com/Kenevan-Carter/streakpot',
+        text: 'Website',
+        link: 'https://thebostoncrab.com/',
       },
     description:
       'A full-stack sports prediction hub where users can enter contests, make picks across a slate of game, and compete based on overall prediction accuracy.',
