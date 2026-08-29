@@ -21,7 +21,7 @@ function Navbar() {
             </ul>
 
             <div className="navbar-icons">
-                <a className="icon-link" href="https://www.linkedin.com/" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+                <a className="icon-link" href="https://www.linkedin.com/in/kenevan-carter/" target="_blank" rel="noreferrer" aria-label="LinkedIn">
                     <img src={linkedinIcon} alt="LinkedIn" />
                 </a>
                 <a className="icon-link" href="https://leetcode.com/u/Kenevan/" target="_blank" rel="noreferrer" aria-label="LeetCode">
