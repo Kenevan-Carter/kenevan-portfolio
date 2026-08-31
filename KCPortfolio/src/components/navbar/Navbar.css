@@ -104,3 +104,61 @@
   transform: scale(1.08);
   filter: brightness(1.15);
 }
+
+@media (max-width: 700px) {
+  .navbar {
+    height: auto;
+    min-height: 70px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 8px 10px;
+  }
+
+  .navbar-monogram {
+    font-size: 48px;
+    width: 70px;
+    height: 60px;
+    border-right: none;
+  }
+
+  .navbar-text {
+    font-size: 30px;
+    padding: 0 10px;
+    text-align: center;
+  }
+
+  .navbar-title {
+    height: auto;
+    border-right: none;
+    font-size: 18px;
+  }
+
+  .navbar-links {
+    width: 100%;
+    height: auto;
+    order: 3;
+
+    gap: 18px;
+    padding: 10px 5px;
+
+    border-left: none;
+    border-right: none;
+    border-top: 1px solid rgba(200, 80, 220, 0.35);
+
+    flex-wrap: wrap;
+  }
+
+  .navbar-links a {
+    font-size: 13px;
+  }
+
+  .navbar-icons {
+    gap: 10px;
+    padding: 5px 8px;
+  }
+
+  .navbar-icons a {
+    width: 27px;
+    height: 27px;
+  }
+}
