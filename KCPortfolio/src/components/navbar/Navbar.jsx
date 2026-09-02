@@ -7,7 +7,6 @@ function Navbar() {
     return (
         <nav className="navbar">
             <div className="navbar-left">
-                <div className="navbar-monogram">KC</div>
             </div>
 
             <div className="navbar-text">
